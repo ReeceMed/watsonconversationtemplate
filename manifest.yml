@@ -1,14 +1,15 @@
 ---
 declared-services:
   conversation-service:
-    label: conversation-service
-    plan: free
+    label: Conversation
+    plan: Standard
+    
 applications:
-- name: conversation-service
+- name: ConversationSimple
   command: npm start
   path: .
-  memory: 256M
-  instances: 1
+  memory: 256M #The maximum memory to allocate to each application instance
+  instances: 1 #The number of instances of the application to start
   services:
   - conversation-service
   env:
