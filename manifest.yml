@@ -13,4 +13,3 @@ applications:
   - conversation-simple-demo
   env:
     NPM_CONFIG_PRODUCTION: false
-    WORKSPACE_ID:
