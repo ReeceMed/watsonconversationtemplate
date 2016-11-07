@@ -1,6 +1,6 @@
 ---
 declared-services:
-  conversation-simple-demo-test1:
+  conversation-simple:
     label: conversation
     plan: free
 applications:
@@ -10,6 +10,7 @@ applications:
   memory: 256M
   instances: 1
   services:
-  - conversation-simple-demo-test1
+  - conversation-simple-demo
   env:
     NPM_CONFIG_PRODUCTION: false
+    WORKSPACE_ID:
